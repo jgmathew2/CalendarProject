@@ -1,0 +1,16 @@
+{
+  "name": "calendarprojectbackend",
+  "version": "1.0.0",
+  "description": "Back-end for my calendar project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan Mathew",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "path": "^0.12.7"
+  }
+}
+
