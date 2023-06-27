@@ -60,8 +60,10 @@ export default function Calendar () {
     // TODO: Transition date input to be Month/Day/Yr
 
     // TODO: Fix CSS styling for notifications on days, looks terrible even if it technically works 
-    
-    // TODO: Fix sorting for LTB
+
+    // TODO: Add updating system
+
+    // TODO: Fix naming convention of todo vs. task in the back-end
 
     return (
         <div id="with-title">

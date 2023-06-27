@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "mongoose": "^7.3.1",
     "path": "^0.12.7"
   }
 }
-

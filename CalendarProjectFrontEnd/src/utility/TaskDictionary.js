@@ -1,4 +1,4 @@
-import Task from "./Task"; 
+import DatabaseConnector from "./DatabaseConnector";
 
 export default class TaskDictionary {
 
@@ -10,10 +10,13 @@ export default class TaskDictionary {
 
     contructor() {}
 
-    static addTask(date, Task) {
+    static addTask(date, Task, reading) {
         //date refers to hashcoded date, not date object 
 
-        if(date == null) date = 0; 
+        if(date == null) {
+            date = 0;
+            Task.date = 0;  
+        }
 
         var dict = TaskDictionary.dict; 
 
@@ -28,9 +31,16 @@ export default class TaskDictionary {
 
         this.array.push(Task); 
 
+        // Sorts array so LTB is sorted 
         this.sortArr(); 
 
+        // Sends global event, so taskbars know to update 
         this.updateTasks(); 
+
+        // Send post request to save current task in the database 
+
+        if(reading !== true) DatabaseConnector.addTask(Task); 
+        
     }
 
     static updateTasks() {
@@ -60,6 +70,8 @@ export default class TaskDictionary {
         if(arrayIndex !== -1) {
             this.array.splice(arrayIndex, 1); 
         }
+
+        DatabaseConnector.removeTask(Task); 
 
         this.updateTasks();
 
