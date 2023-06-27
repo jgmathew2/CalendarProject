@@ -1,0 +1,64 @@
+* {
+    box-sizing: content-box;
+    font-family: "Bowlby One SC"; 
+    line-height: 7px; 
+    text-align:center;
+    
+
+  }
+
+.current{
+    border:3px solid green;
+    background:black; 
+    color:white;
+    border-radius: 20px;
+    width:30px; 
+    height:40px; 
+    padding-left:20px; 
+    padding-right:20px; 
+    padding-top:10px; 
+    padding-bottom:10px; 
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hidden {
+    border:3px solid green;
+    background:lightgray; 
+    color:white;
+    border-radius: 20px;
+    width:30px; 
+    height:40px; 
+    padding-left:20px; 
+    padding-right:20px; 
+    padding-top:10px; 
+    padding-bottom:10px; 
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.today {
+
+    border:6px solid green;
+    background:lightcoral; 
+    color:black;
+    border-radius: 20px;
+    width:30px; 
+    height:40px; 
+    padding-left:20px; 
+    padding-right:20px; 
+    padding-top:10px; 
+    padding-bottom:10px; 
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.hovering {
+    border:5px dashed lightblue; 
+}
+
+.clicked {
+    border:8px solid cornflowerblue; 
+}
+

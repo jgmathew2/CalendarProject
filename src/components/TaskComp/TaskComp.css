@@ -1,0 +1,25 @@
+#task-comp {
+    display: flex;
+    flex-direction: row;
+    border: 2px dotted black;
+    border-radius:16%; 
+    width:290px; 
+    height:fit-content; 
+}
+
+#description {
+    font-size:20px;
+    padding-top:10px; 
+    padding-right:15px; 
+    line-height: 20px;
+}
+
+#day_styling {
+    text-align:center; 
+}
+
+#button-row {
+    display: flex;
+    flex-direction: row;
+}
+

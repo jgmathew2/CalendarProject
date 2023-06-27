@@ -1,6 +1,11 @@
 .App {
+  box-sizing: border-box;
   text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+} 
 
 .App-logo {
   height: 40vmin;
@@ -20,8 +25,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width:max-content; 
   font-size: calc(10px + 2vmin);
   color: white;
+
+}
+
+#header {
+  margin-bottom:200px; 
+}
+
+#calendar {
+  margin-top: 50px; 
+}
+
+#right-tb {
+  position:absolute; 
+  left:60%;
+
 }
 
 .App-link {
@@ -35,4 +56,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#principal-row {
+  display: flex;
+  flex-direction: row;
+  width:100%; 
+  position:relative; 
+}
+
+.horiz-seperator {
+  width:4.5%; 
+}
+
+.indent {
+  width:4%; 
 }

@@ -1,0 +1,32 @@
+#taskbar-title {
+    align-self:center; 
+    font-size:24px; 
+}
+
+#taskbar-title:before {
+    content:"@";
+    display:block;
+    line-height:100px;
+    text-indent:-99999px;
+}
+
+#left-tb-position {
+    position:absolute; 
+    left:4%; 
+}
+
+#ltb-body:before {
+    content:"@";
+    display:block;
+    line-height:40px;
+    text-indent:-99999px;
+}
+
+#ltb-body {
+    line-height: 40px;
+}
+
+#ltb-add-button {
+    width:130px; 
+    height:25px; 
+}

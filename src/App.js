@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Calendar from "./components/Calendar/Calendar"; 
+import LeftTaskBar from "./components/LeftTaskBar/LeftTaskBar"; 
+import RightTaskBar from './components/RightTaskBar/RightTaskBar';
+
 function App() {
+
   return (
+     // This is all a placeholder for Calendar component
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2 id="Title">Johu's Calendar</h2>
+      <br></br>
+
+      <div id="principal-row">
+
+
+        <LeftTaskBar></LeftTaskBar>
+      
+        <Calendar></Calendar>
+
+        <RightTaskBar></RightTaskBar>
+
+      </div>
+      
     </div>
   );
 }
