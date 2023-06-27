@@ -11,8 +11,6 @@ export default class TaskDictionary {
     contructor() {}
 
     static addTask(date, Task) {
-
-
         //date refers to hashcoded date, not date object 
 
         if(date == null) date = 0; 
@@ -60,7 +58,7 @@ export default class TaskDictionary {
             this.dict[date].splice(taskIndex, 1); 
         }
         if(arrayIndex !== -1) {
-            this.array.splice(taskIndex, 1); 
+            this.array.splice(arrayIndex, 1); 
         }
 
         this.updateTasks();
@@ -83,6 +81,9 @@ export default class TaskDictionary {
             let a = c.date; 
             let b = d.date; 
 
+            if(a == null) a = 0; 
+            if(b == null) b = 0; 
+
             while(a % 100 === b % 100) {
                 a /= 100; 
                 b /= 100; 
@@ -100,8 +101,6 @@ export default class TaskDictionary {
     }
 
     static convertDate(date) {
-
-
         //if(date == null) return 0;  
 
         let value = ""; 

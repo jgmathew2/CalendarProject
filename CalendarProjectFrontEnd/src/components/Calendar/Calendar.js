@@ -61,6 +61,7 @@ export default function Calendar () {
 
     // TODO: Fix CSS styling for notifications on days, looks terrible even if it technically works 
     
+    // TODO: Fix sorting for LTB
 
     return (
         <div id="with-title">

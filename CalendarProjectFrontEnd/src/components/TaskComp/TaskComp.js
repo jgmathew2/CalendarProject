@@ -16,17 +16,12 @@ export default function TaskComp(prop) {
     return (
         <div id="button-row">
             <div id="task-comp">
-
-
                 <p id="description">{task.todo}</p>
 
 
                 <div id="day_styling" >
                     <Day date={date} taskComp={true} ></Day>
                 </div>
-
-                
-
             </div>
 
             <button id = "remove-button" onClick={ () => {
